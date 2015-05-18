@@ -1,0 +1,26 @@
+<configuration>
+
+	<logger name="javax.enterprise" level="DEBUG" />
+    <logger name="org.hibernate" level="WARN" />
+    <logger name="org.jboss.weld" level="INFO" />
+	<!-- C3p0 -->
+    <logger name="com.mchange" level="WARN" />
+    
+    <logger name="javax.faces" level="INFO" />
+    <logger name="org.apache" level="INFO" />
+    <logger name="org.primefaces" level="INFO" />
+    <logger name="ch.qos.logback" level="WARN" />
+    <logger name="org.jboss" level="INFO" />	
+     
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{HH:mm:ss}; [%thread]; %-5level; %logger{36}; %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+	</root>
+    
+</configuration>
