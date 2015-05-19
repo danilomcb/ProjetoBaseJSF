@@ -35,12 +35,12 @@ public class SessionCreator {
 	@RequestScoped
 	public Session getInstance() {
 		Session session = factory.openSession();
-		LOGGER.debug("opening a session {}", session);
+		LOGGER.debug("Abrindo a sessão {}", session);
 		return session;
 	}
 
 	public void destroy(@Disposes Session session) {
-		LOGGER.debug("closing session {}", session);
+		LOGGER.debug("Fechando a session {}", session);
 		session.close();
 	}
 }

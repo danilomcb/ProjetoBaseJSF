@@ -3,4 +3,18 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
     
+    <application>
+		<resource-bundle>
+			<base-name>br.com.projetobase.i18n.mensagens</base-name>
+			<var>texto</var>
+		</resource-bundle>
+
+		<locale-config>
+			<default-locale>pt</default-locale>
+			<supported-locale>pt</supported-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+
+	</application>
+	
 </faces-config>

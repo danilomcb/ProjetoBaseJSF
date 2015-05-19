@@ -35,12 +35,12 @@ public class ServiceRegistryCreator {
 	@Produces
 	@ApplicationScoped
 	public ServiceRegistry getInstance() {
-		LOGGER.debug("creating a service registry");
+		LOGGER.debug("Criando o service registry.");
 		return new StandardServiceRegistryBuilder().applySettings(cfg.getProperties()).build();
 	}
 
 	public void destroy(@Disposes ServiceRegistry serviceRegistry) {
-		LOGGER.debug("destroying service registry");
+		LOGGER.debug("Destruindo o service registry.");
 		StandardServiceRegistryBuilder.destroy(serviceRegistry);
 	}
 }

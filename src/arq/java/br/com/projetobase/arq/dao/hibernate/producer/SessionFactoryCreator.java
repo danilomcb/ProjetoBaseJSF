@@ -37,12 +37,12 @@ public class SessionFactoryCreator {
 	@Produces
 	@ApplicationScoped
 	public SessionFactory getInstance() {
-		LOGGER.debug("creating a session factory");
+		LOGGER.debug("Criando o session factory.");
 		return cfg.buildSessionFactory(serviceRegistry);
 	}
 
 	public void destroy(@Disposes SessionFactory sessionFactory) {
-		LOGGER.debug("destroying session factory");
+		LOGGER.debug("Destruindo o session factory.");
 		sessionFactory.close();
 	}
 }
