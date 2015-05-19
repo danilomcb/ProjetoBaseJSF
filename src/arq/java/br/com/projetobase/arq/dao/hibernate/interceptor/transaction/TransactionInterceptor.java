@@ -12,8 +12,8 @@ import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Transactional
 @Interceptor
+@Transactional
 public class TransactionInterceptor implements Serializable {
 	
 	private static final long serialVersionUID = 1L;

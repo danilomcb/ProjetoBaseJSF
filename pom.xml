@@ -10,7 +10,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
-		<jetty.version>6.1.4</jetty.version>
 		<slf4j.version>1.7.3</slf4j.version>
 		<java.version>1.7</java.version>
 		<jsf.version>2.2.11</jsf.version>

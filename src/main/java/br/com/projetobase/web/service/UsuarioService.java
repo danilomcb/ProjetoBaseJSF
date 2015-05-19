@@ -13,6 +13,10 @@ public class UsuarioService {
 	
 	@Transactional
 	public void salvar(Usuario usuario) {
-		usuarioDAO.inserir(usuario);
+		if (usuario.getId() != null && usuario.getId() != 0) {
+			usuarioDAO.inserir(usuario);
+		} else {
+			usuarioDAO.atualizar(usuario);
+		}
 	}
 }
